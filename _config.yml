@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 小间人的博客
+title: 小间人's blog
 subtitle: 人怂话多，适合当萌宠
 description: 目前还是个小白。
 author: 小间人
-language: zh_Hans
+language: zh-CN
 timezone: Asia/Shanghai
 
 # URL
@@ -72,7 +72,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: hexo-theme-next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
