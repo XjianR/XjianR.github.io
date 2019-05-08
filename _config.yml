@@ -25,7 +25,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
+skip_render: README.md
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -70,6 +70,8 @@ per_page: 8
 pagination_dir: page
 
 # Extensions
+## Plugins: https://hexo.io/plugins/
+plugins: hexo-generate-feed
 # RSS订阅
 feed:
   type: atom
@@ -79,7 +81,6 @@ feed:
   content:
   content_limit: 140
   content_limit_delim: ' '
-## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next
 
