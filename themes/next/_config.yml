@@ -54,7 +54,7 @@ footer:
   copyright:
   # -------------------------------------------------------------
   # Hexo link (Powered by Hexo).是否显示Hexo版本
-  powered: false 
+  powered: false
 
   theme:
     # Theme & scheme info link (Theme - NexT.scheme).是否显示主题信息
@@ -224,7 +224,7 @@ auto_excerpt:
 post_meta:
   item_text: true
   created_at: true
-  updated_at: false
+  updated_at: true
   categories: true
 
 # Post wordcount display settings
@@ -243,7 +243,7 @@ post_wordcount:
   #description: ex. subscribe to my blog by scanning my public wechat account
 
 # Reward
-reward_comment: 感谢打赏，您的支持给我更大的动力
+reward_comment: 感谢老铁的打赏，您的支持给我更大的动力
 wechatpay: /assets/img/wxpay.png
 alipay: /assets/img/alipay.png
 #bitcoin: /images/bitcoin.png
@@ -379,12 +379,12 @@ changyan:
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://valine.js.org
 valine:
-  enable: true
+  enable: false
   appid: abUxiv84E6L451t6fA2mMlcU-gzGzoHsz
   appkey: qxeelnWo44RN7AOKuOkYtD7R
-  notify: true # mail notifier , https://github.com/xCss/Valine/wiki
+  notify: false # mail notifier , https://github.com/xCss/Valine/wiki
   verify: true
-  placeholder: (づ￣3￣)づ╭❤~来都来了，不留下一脚吗~留下邮箱可收到我的回复
+  placeholder: (づ￣3￣)づ╭❤~来都来了，不留下一脚吗~留下您邮箱可收到回复提醒
   # gravatar style
   avatar: md
   # ,mail,link
@@ -392,10 +392,14 @@ valine:
   pageSize: 10 # pagination size
 #新的valine评论系统
 valine_modify:
-  enable: false
-  appid: abUxiv84E6L451t6fA2mMlcU-gzGzoHsz,
-  appkey: qxeelnWo44RN7AOKuOkYtD7R,
-  placeholder: (づ￣3￣)づ╭❤~来都来了，不留下一脚吗~
+  enable: true
+  appid: abUxiv84E6L451t6fA2mMlcU-gzGzoHsz
+  appkey: qxeelnWo44RN7AOKuOkYtD7R
+  notify: false # mail notifier , https://github.com/xCss/Valine/wiki
+  verify: false
+  avatar: md
+  guest_info: nick,mail,link
+  placeholder: (づ￣3￣)づ╭❤~来都来了，不留下一脚吗~留下您邮箱可收到回复提醒
   pageSize: 10 # pagination size
 
 # Support for youyan comments system.
@@ -427,9 +431,9 @@ gitment:
 # Available value:
 #    button | slide
 # Warning: Baidu Share does not support https.
-# baidushare:
-    # type: button
-    # baidushare: true
+baidushare:
+    type: slide
+    baidushare: true
 
 # Share
 # This plugin is more useful in China, make sure you known how to use it.
@@ -830,3 +834,8 @@ daovoice_app_id: 25cc30bb
 # 文章末尾添加“本文结束”标记
 passage_end_tag:
   enabled: true
+
+# 增加近期文章
+recent_posts_title: 近期文章
+recent_posts_layout: block
+recent_posts: true
