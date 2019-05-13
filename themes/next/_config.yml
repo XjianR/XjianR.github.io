@@ -243,7 +243,7 @@ post_wordcount:
   #description: ex. subscribe to my blog by scanning my public wechat account
 
 # Reward
-reward_comment: 感谢老铁的打赏，您的支持给我更大的动力
+reward_comment: 「我小间人就是饿死，死外边，从这里跳下去，也不会要你们一点打赏---真香」
 wechatpay: /assets/img/wxpay.png
 alipay: /assets/img/alipay.png
 #bitcoin: /images/bitcoin.png
@@ -431,9 +431,9 @@ gitment:
 # Available value:
 #    button | slide
 # Warning: Baidu Share does not support https.
-baidushare:
-    type: slide
-    baidushare: true
+#baidushare:
+#    type: slide
+#    baidushare: true
 
 # Share
 # This plugin is more useful in China, make sure you known how to use it.
@@ -444,7 +444,7 @@ baidushare:
 #add_this_id:
 
 # Share
-duoshuo_share: true
+duoshuo_share: false
 
 # NeedMoreShare2
 # This plugin is a pure javascript sharing lib which is useful in China.
@@ -458,19 +458,19 @@ duoshuo_share: true
 #           Technorati,Posterous,Tumblr,GoogleBookmarks,Newsvine,
 #           Evernote,Friendfeed,Vkontakte,Odnoklassniki,Mailru
 needmoreshare2:
-  enable: false
+  enable: true
   postbottom:
-    enable: false
+    enable: true
     options:
-      iconStyle: box
+      iconStyle: default
       boxForm: horizontal
       position: bottomCenter
       networks: Weibo,Wechat,Douban,QQZone,Twitter,Facebook
   float:
-    enable: false
+    enable: true
     options:
-      iconStyle: box
-      boxForm: horizontal
+      iconStyle: default
+      boxForm: vertical
       position: middleRight
       networks: Weibo,Wechat,Douban,QQZone,Twitter,Facebook
 
@@ -839,3 +839,8 @@ passage_end_tag:
 recent_posts_title: 近期文章
 recent_posts_layout: block
 recent_posts: true
+
+# 增加精品文章
+boutique_posts_title: 精品文章
+boutique_posts_layout: block
+boutique_posts: true
