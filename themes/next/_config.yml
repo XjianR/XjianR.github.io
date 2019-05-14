@@ -165,7 +165,7 @@ toc:
   number: true
 
   # If true, all words will placed on next lines if header width longer then sidebar width.
-  wrap: false
+  wrap: true
 
 # Creative Commons 4.0 International License.
 # http://creativecommons.org/
@@ -431,9 +431,9 @@ gitment:
 # Available value:
 #    button | slide
 # Warning: Baidu Share does not support https.
-#baidushare:
-#    type: slide
-#    baidushare: true
+baidushare:
+    type: slide
+    baidushare: true
 
 # Share
 # This plugin is more useful in China, make sure you known how to use it.
@@ -458,7 +458,7 @@ duoshuo_share: false
 #           Technorati,Posterous,Tumblr,GoogleBookmarks,Newsvine,
 #           Evernote,Friendfeed,Vkontakte,Odnoklassniki,Mailru
 needmoreshare2:
-  enable: true
+  enable: false
   postbottom:
     enable: true
     options:
@@ -467,7 +467,7 @@ needmoreshare2:
       position: bottomCenter
       networks: Weibo,Wechat,Douban,QQZone,Twitter,Facebook
   float:
-    enable: true
+    enable: false
     options:
       iconStyle: default
       boxForm: vertical
@@ -706,7 +706,6 @@ pace: true
 #pace-theme-mac-osx
 #pace-theme-minimal
 # For example
-# pace_theme: pace-theme-center-simple
 pace_theme: pace-theme-minimal
 
 # Canvas-nest 线条背景
@@ -828,7 +827,7 @@ images: images
 version: 5.1.4
 
 # Online contact 自己增加了一个聊天室
-daovoice: false
+daovoice: true
 daovoice_app_id: 25cc30bb
 
 # 文章末尾添加“本文结束”标记

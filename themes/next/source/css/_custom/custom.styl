@@ -1,13 +1,43 @@
 // Custom styles.
 // 主页文章添加阴影效果
- /*.post {
-   margin-top: 60px;
-   margin-bottom: 60px;
-   padding: 25px;
-   -webkit-box-shadow: 0 0 5px rgba(202, 203, 203, .5);
-   -moz-box-shadow: 0 0 5px rgba(202, 203, 204, .5);
-  }*/
+ .post {
+   margin-top: 12px;
+   margin-bottom: 12px;
+   padding: 5px;
+   -webkit-box-shadow: 0 0 5px rgba(202, 203, 203, .9);
+   -moz-box-shadow: 0 0 5px rgba(202, 203, 204, .9);
+  }
  //二维码不抖动
 #wechat:hover p, #alipay:hover p {
     animation: none;
+}
+
+// 文章目录默认展开
+//.post-toc .nav .nav-child { display: block; }
+
+//改变背景色和透明度
+.main-inner {
+  background: #fff;
+  opacity: 0.9;
+}
+
+body {
+  background:url(https://source.unsplash.com/random/1600x900);
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-position:50% 50%;
+}
+
+// 自定义页脚跳动的心样式
+@keyframes heartAnimate {
+  0%,100%{transform:scale(1);}
+  10%,30%{transform:scale(0.9);}
+  20%,40%,60%,80%{transform:scale(1.1);}
+  50%,70%{transform:scale(1.1);}
+}
+#heart {
+  animation: heartAnimate 1.33s ease-in-out infinite;
+}
+.with-love {
+  color: rgb(255, 45, 0);
 }
