@@ -146,7 +146,7 @@
 			  </div>
 			  <ul class="links-of-blogroll-list">
 				{% set posts = site.posts.sort('-date') %}
-				{% for post in posts.slice('0', '5') %}
+				{% for post in posts.slice('0', '3') %}
 				  <li>
 					<a href="{{ url_for(post.path) }}" title="{{ post.title }}" target="_blank">{{ post.title }}</a>
 				  </li>
@@ -193,6 +193,44 @@
               <p class="post-toc-empty">{{ __('post.toc_empty') }}</p>
             {% else %}
               <div class="post-toc-content">{{ toc }}</div>
+            {% endif %}
+
+            {# 最新文章 #}
+            {% if theme.recent_posts %}
+            <div class="links-of-blogroll motion-element {{ "links-of-blogroll-" + theme.recent_posts_layout  }}">
+              <div class="links-of-blogroll-title">
+              <!-- modify icon to fire by szw -->
+              <i class="fa fa-history" aria-hidden="true"></i>
+              {{ theme.recent_posts_title }}
+              </div>
+              <ul class="links-of-blogroll-list">
+              {% set posts = site.posts.sort('-date') %}
+              {% for post in posts.slice('0', '3') %}
+                <li>
+                <a href="{{ url_for(post.path) }}" title="{{ post.title }}" target="_blank">{{ post.title }}</a>
+                </li>
+              {% endfor %}
+              </ul>
+            </div>
+            {% endif %}
+
+            {# 精品文章 #}
+            {% if theme.boutique_posts %}
+            <div class="links-of-blogroll motion-element {{ "links-of-blogroll-" + theme.boutique_posts_layout  }}">
+              <div class="links-of-blogroll-title">
+              <!-- modify icon to fire by szw -->
+              <i class="fa fa-fire" aria-hidden="true"></i>
+              {{ theme.boutique_posts_title }}
+              </div>
+              <ul class="links-of-blogroll-list">
+              {% set posts = site.posts.sort('-views') %}
+              {% for post in posts.slice('0', '5') %}
+                <li>
+                <a href="{{ url_for(post.path) }}" title="{{ post.title }}" target="_blank">{{ post.title }}</a>
+                </li>
+              {% endfor %}
+              </ul>
+            </div>
             {% endif %}
 
           </div>
