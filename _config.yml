@@ -113,3 +113,6 @@ live2d:
     height: 200
   mobile:
     show: false #是否在手机端显示
+#使用aplayer音乐播放器
+aplayer:
+  meting: true

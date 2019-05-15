@@ -9,7 +9,7 @@ document.addEventListener('visibilitychange', function () {
   }
   else {
     $('[rel="icon"]').attr('href', "/assets/img/favicon_32.png");
-    document.title = 'ヾ(Ő∀Ő3)ノ又好了~' + OriginTitle;
+    document.title = 'ヾ(Ő∀Ő3)ノ咦又好了~' + OriginTitle;
     titleTime = setTimeout(function () {
       document.title = OriginTitle;
     }, 2000);
