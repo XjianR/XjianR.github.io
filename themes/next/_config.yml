@@ -296,8 +296,8 @@ highlight_theme: normal
 font:
   enable: false
 
-  # Uri of fonts host. E.g. //fonts.googleapis.com (Default).
-  host:
+  # Uri of fonts host. E.g. //fonts.googleapis.com (Default). 改了中科大的源
+  host: //fonts.lug.ustc.edu.cn
 
   # Font options:
   # `external: true` will load this font family from `host` above.
