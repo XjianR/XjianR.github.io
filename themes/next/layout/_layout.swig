@@ -89,10 +89,24 @@
   {% include '_third-party/mathjax.swig' %}
   {% include '_third-party/scroll-cookie.swig' %}
   {% include '_third-party/exturl.swig' %}
+    <script src="/js/src/instantClick.js" data-no-instant></script>
+    <script data-no-instant>
+      InstantClick.on('change', function(isInitialLoad) {
+        if (isInitialLoad === false) {
+            // 百度分享
+            window._bd_share_main.init()
+            // 百度统计
+            _hmt.push(['_trackPageview', location.pathname + location.search])
+            //MathJax
+            if (typeof MathJax !== 'undefined')
+            MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+        }
+      });
+      InstantClick.init(50);
+    </script>
 </body>
 </html>
 <!-- 页面点击小红心 -->
 <!-- <script type="text/javascript" src="/js/src/clicklove.js"></script> -->
-
 <!--浏览器搞笑标题-->
 <script type="text/javascript" src="/js/src/FunnyTitle.js"></script>

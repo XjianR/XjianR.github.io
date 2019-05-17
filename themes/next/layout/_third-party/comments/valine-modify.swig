@@ -1,6 +1,6 @@
 {% if theme.valine_modify.enable and theme.valine_modify.appid and theme.valine_modify.appkey %}
   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src="/js/src/Valine.min.js"></script>
+  <script src="/js/src/Valine.min.js" data-no-instant></script>
 
   <script type="text/javascript">
     var GUEST = ['nick','mail','link'];
