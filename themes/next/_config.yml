@@ -392,7 +392,7 @@ valine:
   pageSize: 10 # pagination size
 #新的valine评论系统
 valine_modify:
-  enable: true
+  enable: false
   appid: abUxiv84E6L451t6fA2mMlcU-gzGzoHsz
   appkey: qxeelnWo44RN7AOKuOkYtD7R
   notify: false # mail notifier , https://github.com/xCss/Valine/wiki
@@ -668,7 +668,7 @@ tabs:
 
 # Use velocity to animate everything.
 motion:
-  enable: true
+  enable: false
   # 异步加载
   async: true
   transition:
@@ -755,7 +755,7 @@ vendors:
 
   # Internal version: 1.9.7
   # See: https://github.com/tuupola/jquery_lazyload
-  lazyload:
+  lazyload: https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js
 
   # Internal version: 1.2.1
   # See: http://VelocityJS.org

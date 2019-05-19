@@ -1,6 +1,10 @@
-/* global NexT: true */
-
-$(document).ready(function () {
+<script src="//cdn.bootcss.com/jquery.pjax/1.9.6/jquery.pjax.js"></script>
+<script src="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
+<script type="text/javascript">
+$(document).on('pjax:start', NProgress.start).on('pjax:end', NProgress.done);
+$(document).pjax('a[target!="_blank"][rel!=group],.sidebar-inner', '#pjax-container', {timeout: 8000, fragment: '#pjax-container'});
+$(document).on('pjax:complete', function () {
+  NexT.motion.integrator.cursor = -1;
 
   $(document).trigger('bootstrap:before');
 
@@ -8,11 +12,8 @@ $(document).ready(function () {
 
   NexT.utils.lazyLoadPostsImages();
 
-  NexT.utils.registerESCKeyEvent();
-
   NexT.utils.registerBackToTop();
 
-  // Mobile top menu bar.
   $('.site-nav-toggle button').on('click', function () {
     var $siteNav = $('.site-nav');
     var ON_CLASS_NAME = 'site-nav-on';
@@ -25,30 +26,20 @@ $(document).ready(function () {
     });
   });
 
-  /**
-   * Register JS handlers by condition option.
-   * Need to add config option in Front-End at 'layout/_partials/head.swig' file.
-   */
   CONFIG.fancybox && NexT.utils.wrapImageWithFancyBox();
-  CONFIG.tabs && NexT.utils.registerTabsTag();
-
   NexT.utils.embeddedVideoTransformer();
   NexT.utils.addActiveClassToMenuItem();
 
-
-  // Define Motion Sequence.
-  NexT.motion.integrator
-    .add(NexT.motion.middleWares.logo)
-    .add(NexT.motion.middleWares.menu)
-    .add(NexT.motion.middleWares.postList)
-    .add(NexT.motion.middleWares.sidebar);
-
   $(document).trigger('motion:before');
 
-  //NexT.motion.init();
-
-  // Bootstrap Motion.
-  CONFIG.motion.enable && NexT.motion.integrator.bootstrap();
-
+ // NexT.motion.init();
+  if (CONFIG.motion) {
+    $('.archive-year').velocity('transition.slideLeftIn');
+    CONFIG.motion && NexT.motion.integrator.bootstrap();
+  }
+  NexT.postDetails.init();
   $(document).trigger('bootstrap:after');
+
+//  undefined === ga || ga('send', 'pageview');
 });
+</script>

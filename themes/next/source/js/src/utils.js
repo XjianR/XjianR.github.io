@@ -30,6 +30,7 @@ NexT.utils = NexT.$u = {
       });
 
     $('.fancybox').fancybox({
+      parent:'body',
       helpers: {
         overlay: {
           locked: false
@@ -44,6 +45,13 @@ NexT.utils = NexT.$u = {
       effect: 'fadeIn',
       threshold : 0
     });
+   //  $('img').lazyload({
+   //     placeholder: '/images/loading.gif',
+   //     effect: 'fadeIn',
+   //     threshold : 100,
+   //     failure_limit : 20,
+   //     skip_invisible : false
+   // });
   },
 
   /**
@@ -285,16 +293,16 @@ NexT.utils = NexT.$u = {
           ((sidebarPadding * 2) + sidebarNavHeight + (CONFIG.sidebar.offset * 2) + this.getSidebarb2tHeight()) :
           ((sidebarPadding * 2) + (sidebarNavHeight / 2));
     return sidebarSchemePadding;
-  }
+  },
 
   /**
    * Affix behaviour for Sidebar.
    *
    * @returns {Boolean}
    */
-//  needAffix: function () {
-//    return this.isPisces() || this.isGemini();
-//  }
+ needAffix: function () {
+   return this.isPisces() || this.isGemini();
+ }
 };
 
 $(document).ready(function () {

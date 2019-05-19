@@ -148,7 +148,7 @@
 				{% set posts = site.posts.sort('-date') %}
 				{% for post in posts.slice('0', '3') %}
 				  <li>
-					<a href="{{ url_for(post.path) }}" title="{{ post.title }}" target="_blank">{{ post.title }}</a>
+					<a href="{{ url_for(post.path) }}" title="{{ post.title }}">{{ post.title }}</a>
 				  </li>
 				{% endfor %}
 			  </ul>
@@ -167,7 +167,7 @@
 				{% set posts = site.posts.sort('-views') %}
 				{% for post in posts.slice('0', '5') %}
 				  <li>
-					<a href="{{ url_for(post.path) }}" title="{{ post.title }}" target="_blank">{{ post.title }}</a>
+					<a href="{{ url_for(post.path) }}" title="{{ post.title }}">{{ post.title }}</a>
 				  </li>
 				{% endfor %}
 			  </ul>
@@ -194,8 +194,9 @@
             {% else %}
               <div class="post-toc-content">{{ toc }}</div>
             {% endif %}
+          </div>
 
-            {# 最新文章 #}
+          {# 最新文章 #}
             {% if theme.recent_posts %}
             <div class="links-of-blogroll motion-element {{ "links-of-blogroll-" + theme.recent_posts_layout  }}">
               <div class="links-of-blogroll-title">
@@ -205,9 +206,9 @@
               </div>
               <ul class="links-of-blogroll-list">
               {% set posts = site.posts.sort('-date') %}
-              {% for post in posts.slice('0', '3') %}
+              {% for post in posts.slice('0', '5') %}
                 <li>
-                <a href="{{ url_for(post.path) }}" title="{{ post.title }}" target="_blank">{{ post.title }}</a>
+                <a href="{{ url_for(post.path) }}" title="{{ post.title }}">{{ post.title }}</a>
                 </li>
               {% endfor %}
               </ul>
@@ -226,14 +227,13 @@
               {% set posts = site.posts.sort('-views') %}
               {% for post in posts.slice('0', '5') %}
                 <li>
-                <a href="{{ url_for(post.path) }}" title="{{ post.title }}" target="_blank">{{ post.title }}</a>
+                <a href="{{ url_for(post.path) }}" title="{{ post.title }}">{{ post.title }}</a>
                 </li>
               {% endfor %}
               </ul>
             </div>
             {% endif %}
 
-          </div>
         </section>
       <!--/noindex-->
       {% endif %}

@@ -60,7 +60,7 @@
   {% if theme.vendors.fancybox_css %}
     {% set fancybox_css_uri = theme.vendors.fancybox_css %}
   {% endif %}
-  <link href="{{ fancybox_css_uri }}" rel="stylesheet" type="text/css" />
+  <link href="{{ fancybox_css_uri }}" rel="stylesheet" type="text/css"/>
 {% endif %}
 
 {% include "./head/external-fonts.swig" %}
