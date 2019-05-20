@@ -1,8 +1,6 @@
 /* global NexT: true */
 
-NexT.postDetails = {};
-
-NexT.postDetails.init = function(){
+$(document).ready(function () {
 
   initScrollSpy();
 
@@ -31,6 +29,9 @@ NexT.postDetails.init = function(){
     }
   }
 
+});
+
+$(document).ready(function () {
   var html = $('html');
   var TAB_ANIMATE_DURATION = 200;
   var hasVelocity = $.isFunction(html.velocity);
@@ -87,13 +88,12 @@ NexT.postDetails.init = function(){
   // Expand sidebar on post detail page by default, when post has a toc.
   var $tocContent = $('.post-toc-content');
   var isSidebarCouldDisplay = CONFIG.sidebar.display === 'post' ||
-      CONFIG.sidebar.display === 'always';
+    CONFIG.sidebar.display === 'always';
   var hasTOC = $tocContent.length > 0 && $tocContent.html().trim().length > 0;
   if (isSidebarCouldDisplay && hasTOC) {
     CONFIG.motion.enable ?
       (NexT.motion.middleWares.sidebar = function () {
-          NexT.utils.displaySidebar();
+        NexT.utils.displaySidebar();
       }) : NexT.utils.displaySidebar();
   }
-};
-$(NexT.postDetails.init);
+});
