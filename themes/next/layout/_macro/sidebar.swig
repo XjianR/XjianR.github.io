@@ -148,7 +148,7 @@
 				{% set posts = site.posts.sort('-date') %}
 				{% for post in posts.slice('0', '3') %}
 				  <li>
-					<a href="{{ url_for(post.path) }}" title="{{ post.title }}">{{ post.title }}</a>
+					<a class="posts_article" href="{{ url_for(post.path) }}" title="{{ post.title }}">{{ post.title }}</a>
 				  </li>
 				{% endfor %}
 			  </ul>
@@ -167,7 +167,7 @@
 				{% set posts = site.posts.sort('-views') %}
 				{% for post in posts.slice('0', '5') %}
 				  <li>
-					<a href="{{ url_for(post.path) }}" title="{{ post.title }}">{{ post.title }}</a>
+					<a class="posts_article" href="{{ url_for(post.path) }}" title="{{ post.title }}">{{ post.title }}</a>
 				  </li>
 				{% endfor %}
 			  </ul>
@@ -208,7 +208,7 @@
               {% set posts = site.posts.sort('-date') %}
               {% for post in posts.slice('0', '5') %}
                 <li>
-                <a href="{{ url_for(post.path) }}" title="{{ post.title }}">{{ post.title }}</a>
+                <a class="posts_article" href="{{ url_for(post.path) }}" title="{{ post.title }}">{{ post.title }}</a>
                 </li>
               {% endfor %}
               </ul>
@@ -227,7 +227,7 @@
               {% set posts = site.posts.sort('-views') %}
               {% for post in posts.slice('0', '5') %}
                 <li>
-                <a href="{{ url_for(post.path) }}" title="{{ post.title }}">{{ post.title }}</a>
+                <a class="posts_article" href="{{ url_for(post.path) }}" title="{{ post.title }}">{{ post.title }}</a>
                 </li>
               {% endfor %}
               </ul>

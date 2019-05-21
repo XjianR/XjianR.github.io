@@ -99,7 +99,7 @@ search:
   limit: 10000
 #宠物
 live2d:
-  enable: true
+  enable: false
   scriptFrom: local
   pluginRootPath: live2dw/
   pluginJsPath: lib/

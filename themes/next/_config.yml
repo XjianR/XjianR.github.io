@@ -392,7 +392,7 @@ valine:
   pageSize: 10 # pagination size
 #新的valine评论系统
 valine_modify:
-  enable: false
+  enable: true
   appid: abUxiv84E6L451t6fA2mMlcU-gzGzoHsz
   appkey: qxeelnWo44RN7AOKuOkYtD7R
   notify: false # mail notifier , https://github.com/xCss/Valine/wiki
@@ -668,7 +668,7 @@ tabs:
 
 # Use velocity to animate everything.
 motion:
-  enable: false
+  enable: true
   # 异步加载
   async: true
   transition:
@@ -843,3 +843,4 @@ recent_posts: true
 boutique_posts_title: 精品文章
 boutique_posts_layout: block
 boutique_posts: true
+

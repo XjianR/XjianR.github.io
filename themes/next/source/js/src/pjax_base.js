@@ -1,41 +1,31 @@
-$(document).on('pjax:start', NProgress.start).on('pjax:end', NProgress.done);
-$(document).pjax('a[target!="_blank"][rel!=group],.sidebar-inner', '#pjax-container', {timeout: 8000, fragment: '#pjax-container'});
-$(document).on('pjax:complete', function () {
-  // NexT.motion.integrator.cursor = -1;
-  //
-  // $(document).trigger('bootstrap:before');
-  //
-  // NexT.utils.isMobile() && window.FastClick.attach(document.body);
-  //
-  // NexT.utils.lazyLoadPostsImages();
-  //
-  // NexT.utils.registerBackToTop();
-  //
-  // $('.site-nav-toggle button').on('click', function () {
-  //   var $siteNav = $('.site-nav');
-  //   var ON_CLASS_NAME = 'site-nav-on';
-  //   var isSiteNavOn = $siteNav.hasClass(ON_CLASS_NAME);
-  //   var animateAction = isSiteNavOn ? 'slideUp' : 'slideDown';
-  //   var animateCallback = isSiteNavOn ? 'removeClass' : 'addClass';
-  //
-  //   $siteNav.stop()[animateAction]('fast', function () {
-  //     $siteNav[animateCallback](ON_CLASS_NAME);
-  //   });
-  // });
-  //
-  // CONFIG.fancybox && NexT.utils.wrapImageWithFancyBox();
-  // NexT.utils.embeddedVideoTransformer();
-  // NexT.utils.addActiveClassToMenuItem();
-  //
-  // $(document).trigger('motion:before');
-  //
-  // NexT.motion.init();
-  // if (CONFIG.motion) {
-  //   $('.archive-year').velocity('transition.slideLeftIn');
-  //   CONFIG.motion && NexT.motion.integrator.bootstrap();
-  // }
-  // NexT.postDetails.init();
-  // $(document).trigger('bootstrap:after');
-
-//  undefined === ga || ga('send', 'pageview');
+$(document).pjax("a[target!=_blank][rel!=group]", "#pjax-container", {fragment: "#pjax-container", timeout: 6e3});
+$(window).on("popstate.pjax", function () {
+    pjax();
 });
+$(document).on("pjax:start", function () {
+    $(document).unbind("keyup")
+});
+$(document).on("pjax:complete", function () {
+        pjax();
+});
+
+function pjax() {
+    // gitalk();
+    // eye_js();
+    article_top_js();
+    // busuanzi_js();
+    // category_js();
+    // opacity_js();
+    motion_js();
+    scrollspy_js();
+    postdetails_js();
+    // lean_analytics();
+    // baidutuisong();
+    initSidebarDimension();
+    // lazyLoad();
+    // donate();
+    // hover_sidebar();
+    // pjax_eye_change();
+    // wrapImageWithFancyBox();
+    // copy_code()
+}
