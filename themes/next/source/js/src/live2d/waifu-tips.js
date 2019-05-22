@@ -4,13 +4,14 @@
  */
 
 function initWidget(waifuPath, apiPath) {
-	if (screen.width <= 768 || (localStorage.getItem("waifu-display") && new Date().getTime() - localStorage.getItem("waifu-display") <= 86400000)) return;
+	if (screen.width <= 768 || (localStorage.getItem("waifu-display") && new Date().getTime() - localStorage.getItem("waifu-display") <= 8640000)) return;
 	localStorage.removeItem("waifu-display");
 	sessionStorage.removeItem("waifu-text");
 	$("body").append(`<div id="waifu">
 			<div id="waifu-tips"></div>
 			<canvas id="live2d" width="200" height="200"></canvas>
 			<div id="waifu-tool">
+			  <span class="fa fa-lg fa-home"></span>
 				<span class="fa fa-lg fa-comment"></span>
 				<!--<span class="fa fa-lg fa-paper-plane"></span>-->
 				<!--<span class="fa fa-lg fa-user-circle"></span>-->
@@ -35,6 +36,9 @@ function initWidget(waifuPath, apiPath) {
 	});
 	$("#waifu-tool .fa-info-circle").click(function() {
 		window.open("https://github.com/stevenjoezhang/live2d-widget");
+	});
+	$("#waifu-tool .fa-home").click(function() {
+		window.location.href="/";
 	});
 	$("#waifu-tool .fa-times").click(function() {
 		localStorage.setItem("waifu-display", new Date().getTime());

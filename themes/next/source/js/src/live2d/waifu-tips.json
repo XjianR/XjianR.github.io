@@ -3,6 +3,9 @@
 		"selector": "#waifu #live2d",
 		"text": ["干嘛呢你，快把手拿开～～", "鼠…鼠标放错地方了！", "你要干嘛呀？", "汪汪汪？", "怕怕(ノ≧∇≦)ノ", "非礼呀！救命！", "这样的话，只能使用武力了！", "我要生气了哦", "不要动手动脚的！", "我…真的是太可爱了！", "给我个骨头吃啊！"]
 	}, {
+    "selector": "#waifu-tool .fa-home",
+		"text": ["点这里可以回到首页哦~", "想要回到首页查看更多的东西吗？"]
+	}, {
 		"selector": "#waifu-tool .fa-comment",
 		"text": ["猜猜我要说些什么？", "我从小间人那里听到了不少人生经验。"]
 	}, {
@@ -114,17 +117,23 @@
 		"selector": ".need-share-button_wechat, .slide-weixin",
 		"text": ["分享到微信吧！"]
 	}, {
-		"selector": ".need-share-button_douban",
+		"selector": ".need-share-button_douban, .slide-douban",
 		"text": ["分享到豆瓣好像也不错！"]
 	}, {
 		"selector": ".need-share-button_qqzone, .slide-qzone",
 		"text": ["QQ空间，一键转发，耶～"]
 	}, {
-		"selector": ".need-share-button_twitter",
+    "selector": ".slide-sqq",
+		"text": ["分享给QQ好友，我有6位数的QQ号哦！"]
+	}, {
+		"selector": ".need-share-button_twitter, .slide-twi",
 		"text": ["Twitter？好像是不存在的东西？"]
 	}, {
-		"selector": ".need-share-button_facebook",
+		"selector": ".need-share-button_facebook, .slide-fbook",
 		"text": ["emmm…FB好像也是不存在的东西？"]
+	}, {
+    "selector": ".slide-bdysc",
+		"text": ["好东西赶快藏起来！"]
 	}, {
 		"selector": ".post-nav-next",
 		"text": ["来看看下一篇文章吧。", "点它可以看下一篇文章哦！", "要翻到下一篇文章吗？"]
