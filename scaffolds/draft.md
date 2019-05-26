@@ -1,4 +1,21 @@
 ---
+layout: post
 title: {{ title }}
-tags:
+date: {{ date }}
+categories:
+tags: []
+description:
+comments:true
 ---
+
+<img src="https://" alt="" style="width:100%" />
+
+<!-- more -->
+
+##
+
+##
+
+##
+
+<hr />
