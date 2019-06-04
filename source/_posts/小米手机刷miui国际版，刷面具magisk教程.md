@@ -62,12 +62,7 @@ __1.VPN开启全局代理；2.要么将这额域名添加到黑名单内，让�
 
 magisk有什么用呢？打个比方说，除了当ROOT使以外，magisk对系统相当于mod对于老滚五。
 
-刷magisk之前是需要刷第三方REC的，刷第三方REC同样需要解BL锁--[官方解锁工具](http://www.miui.com/unlock/index.html)！
+刷magisk之前是需要刷第三方REC的，刷第三方REC同样需要解BL锁--[官方解锁工具](http://www.miui.com/unlock/index.html)！有很多
 
 简单快捷的刷第三方rec可自行到[米柚论坛](http://www.miui.com)找大神的整合方法，就我自己的小米mix3可参照帖子：[小米MIX3专版TWRP中英文修改优化版](http://www.miui.com/thread-19749636-1-1.html)自行刷入,一键刷TM还自带magisk。。。
 
-如果没有找到
-
-Magisk Manager安装包可以自行在网上下载，我本人是在酷安网上下的。
-
-如果手机之前就root了，
