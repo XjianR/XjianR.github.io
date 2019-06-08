@@ -1,3 +1,3 @@
-// build time:Sat Jun 08 2019 17:17:45 GMT+0800 (GMT+08:00)
+// build time:Sat Jun 08 2019 22:30:50 GMT+0800 (GMT+08:00)
 $(document).pjax("a[target!=_blank][rel!=group]","#pjax-container",{fragment:"#pjax-container",timeout:6e3});$(window).on("popstate.pjax",function(){pjax()});$(document).on("pjax:start",function(){$(document).unbind("keyup")});$(document).on("pjax:complete",function(){pjax()});function pjax(){article_top_js();motion_js();scrollspy_js();postdetails_js();initSidebarDimension()}
 //rebuild by neat 
