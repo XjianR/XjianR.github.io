@@ -379,11 +379,11 @@ changyan:
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://valine.js.org
 valine:
-  enable: true
+  enable: false
   appid: abUxiv84E6L451t6fA2mMlcU-gzGzoHsz
   appkey: qxeelnWo44RN7AOKuOkYtD7R
   notify: false # mail notifier , https://github.com/xCss/Valine/wiki
-  verify: true
+  verify: false
   placeholder: (づ￣3￣)づ╭❤~来都来了，不留下一脚吗~留下您的邮箱可收到回复提醒
   # gravatar style
   avatar: md
@@ -392,7 +392,7 @@ valine:
   pageSize: 10 # pagination size
 #新的valine评论系统
 valine_modify:
-  enable: false
+  enable: true
   appid: abUxiv84E6L451t6fA2mMlcU-gzGzoHsz
   appkey: qxeelnWo44RN7AOKuOkYtD7R
   notify: false # mail notifier , https://github.com/xCss/Valine/wiki
