@@ -399,7 +399,7 @@ valine_modify:
   verify: false
   avatar: md
   guest_info: nick,mail,link
-  placeholder: (づ￣3￣)づ╭❤~来都来了，不留下一脚吗~留下您邮箱可收到回复提醒
+  placeholder: ✍(づ￣3￣)づ╭❤~来都来了，不留下一脚吗~留下您邮箱可收到回复提醒
   pageSize: 10 # pagination size
 
 # Support for youyan comments system.
