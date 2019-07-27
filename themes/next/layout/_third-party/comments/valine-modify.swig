@@ -1,6 +1,6 @@
 {% if theme.valine_modify.enable and theme.valine_modify.appid and theme.valine_modify.appkey %}
   <script src="https://cloud.panjunwen.com/av-min.js?t=1560005653621"></script>
-  <script src="/js/src/Valine.min111.js"></script>
+  <script src="/js/src/valine2.min.js"></script>
 
   <script type="text/javascript">
     var GUEST = ['nick','mail','link'];
